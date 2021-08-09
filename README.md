@@ -359,25 +359,37 @@ http://89tr.chengchen.com/index/getlog
 ├── README.md
 ├── classes
 │   ├── ctrl
-│   │   ├── GiftCodeCtrl.php
-│   │   ├── LoginCtrl.php
-│   ├── entity
-│   │   ├── user.php
+│   │   ├── IndexCtrl.php
+│   ├── dao
+│   │   ├── CacheDao.php
+│   │   ├── ConstDaoBase.php
+│   │   ├── DaoBase.php
+│   │   └── SampleDao.php
+│   ├── exception
+│   │   └── CommonException.php
+│   ├── report
+│   │   ├── locustfile.py
+│   │   └── report_1628499741.165128.html
 │   ├── service
 │   │   ├── AnswerService.php
 │   │   ├── BaseService.php
 │   │   ├── CacheService.php
-│   │   ├── GiftCodeService.php
-│   │   ├── LoginService.php
-│   │   └── SampleService.php
+│   │   ├── ManagerService.php
+│   │   ├── SampleService.php
+│   │   └── UserService.php
 │   ├── unitTest
-│   │   ├── GiftCodeServiceTest.php
-│   │   └── LoginServiceTest.php
-├── report
-│   ├── locustfile.py
-│   └── report_1628134286.6186502.html
+│   │   └── ManagerServiceTest.php
+│   └── template
+│       ├── user
+│       │   ├── boss.html
+│       │   ├── changepwd.html
+│       │   ├── log.html
+│       │   ├── login.html
+│       │   └── pvp.html
+│       └── welcome.html
 └── webroot
-    └── index.php
+    ├── index.php
+
 
 ```
 ## 3.1 逻辑分层

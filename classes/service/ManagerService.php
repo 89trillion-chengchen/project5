@@ -18,36 +18,9 @@ class ManagerService extends BaseService
 
     public function checkParams($params)
     {
-        extract($params);
-
-        if (!isset($id) || empty($id)) {
-            return array(false, 'lack_of_id');
+        if (!isset($params) || empty($params)) {
+            return array(false, 'lack_of_params');
         }
-
-        if (!isset($name) || empty($name)) {
-            return array(false, 'lack_of_name');
-        }
-
-        if (!isset($price) || empty($price)) {
-            return array(false, 'lack_of_price');
-        }
-
-        if (!isset($diamond) || empty($diamond)) {
-            return array(false, 'lack_of_diamond');
-        }
-
-        if (!isset($soldier) || empty($soldier)) {
-            return array(false, 'lack_of_soldier');
-        }
-
-        if (!isset($soldier_num) || empty($soldier_num)) {
-            return array(false, 'lack_of_soldier_num');
-        }
-
-        if (!isset($coin) || empty($coin)) {
-            return array(false, 'lack_of_coin');
-        }
-
         return array(true, 'ok');
     }
 
@@ -79,6 +52,7 @@ class ManagerService extends BaseService
 
     public function upPvpDate($params)
     {
+        die(print_r($params));
         /** @var SampleService $sampleService */
         $sampleService = Singleton::get(SampleService::class);
         //查询原始数据
@@ -134,7 +108,7 @@ class ManagerService extends BaseService
                 return parent::show(
                     400,
                     error,
-                    '修改失败！'
+                    $exception
                 );
             }
         }
@@ -210,7 +184,7 @@ class ManagerService extends BaseService
                 return parent::show(
                     400,
                     error,
-                    '修改失败！'
+                    $exception
                 );
             }
         }

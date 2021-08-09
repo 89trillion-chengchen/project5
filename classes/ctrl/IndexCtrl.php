@@ -8,6 +8,7 @@ namespace ctrl;
 use framework\util;
 use framework\mvc\view\smarty;
 use framework\util\Singleton;
+use service\AnswerService;
 use service\ManagerService;
 use utils\HttpUtil;
 use view\JsonView;
@@ -66,6 +67,12 @@ class IndexCtrl extends CtrlBase
 
         /** @var ManagerService $managerService */
         $managerService = Singleton::get(ManagerService::class);
+        //校验数据
+        list($checkResult, $checkNotice) = $managerService->checkParams($params);
+        if (true!==$checkResult){
+            $rspArr = AnswerService::makeResponseArray($checkNotice);
+            return new JsonView($rspArr);
+        }
         //执行函数
         $result = $managerService->upPvpDate($params);
 
@@ -78,6 +85,12 @@ class IndexCtrl extends CtrlBase
         $params = HttpUtil::getPostData('param');
         /** @var ManagerService $managerService */
         $managerService = Singleton::get(ManagerService::class);
+        //校验数据
+        list($checkResult, $checkNotice) = $managerService->checkParams($params);
+        if (true!==$checkResult){
+            $rspArr = AnswerService::makeResponseArray($checkNotice);
+            return new JsonView($rspArr);
+        }
         //执行函数
         $result = $managerService->upBossDate($params);
 
