@@ -1,9 +1,10 @@
 # 1.整体思路
-### 1.登陆注册
-![Image text](https://raw.githubusercontent.com/89trillion-chengchen/project4/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
-### 2.使用礼品码
-![Image text](https://raw.githubusercontent.com/89trillion-chengchen/job3/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE3.jpg)
-
+### 1.修改冠军礼包
+![Image text](https://raw.githubusercontent.com/89trillion-chengchen/project5/master/classes/images/job51.jpg)
+### 2.查询操作记录
+（1）首先group by group_id得到分组信息  
+（2）再根据查到的group_id查询具体的操作信息，并放入数组  
+（3）返回给前端操作记录
 # 2.接口设计
 
 ### （1）获取世界BOSS冠军礼包信息

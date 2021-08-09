@@ -158,7 +158,7 @@ class ManagerService extends BaseService
             if ($result[$i]['coin'] != $params[$i]['coin']) {
                 $type = $type . '5,';
             }
-            $type=rtrim($type,",");
+            $type = rtrim($type, ",");
             $id = $params[$i][id];
             $package_name = $params[$i]['name'];
             $price = $params[$i]['price'];
@@ -201,11 +201,11 @@ class ManagerService extends BaseService
         $sampleService = Singleton::get(SampleService::class);
         $sql = "SELECT DISTINCT group_id FROM Champion_package_log GROUP BY group_id";
         $pvpresult = $sampleService->query($sql);
-        $result=array();
-        foreach ($pvpresult as $key=>$value) {
-            $sql="SELECT * from Champion_package_log where group_id= '$value[group_id]'";
-            $re=$sampleService->query($sql);
-            array_push($result,$re);
+        $result = array();
+        foreach ($pvpresult as $key => $value) {
+            $sql = "SELECT * from Champion_package_log where group_id= '$value[group_id]'";
+            $re = $sampleService->query($sql);
+            array_push($result, $re);
         }
         return parent::show(
             200,
