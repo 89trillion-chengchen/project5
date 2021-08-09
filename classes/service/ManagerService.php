@@ -52,7 +52,6 @@ class ManagerService extends BaseService
 
     public function upPvpDate($params)
     {
-        die(print_r($params));
         /** @var SampleService $sampleService */
         $sampleService = Singleton::get(SampleService::class);
         //查询原始数据

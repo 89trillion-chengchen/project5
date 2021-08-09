@@ -4,7 +4,6 @@ namespace service;
 
 use framework\util\Singleton;
 use PHPUnit\Framework\TestCase;
-use utils\HttpUtil;
 use view\JsonView;
 
 class ManagerServiceTest extends TestCase
