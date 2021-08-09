@@ -1,0 +1,27 @@
+<{include file='header.html'}>
+<form class="form-horizontal" action="" method="post">
+    <{if $message}>
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <{$message}>
+    </div>
+    <{/if}>
+  <div class="control-group">
+    <label class="control-label" for="">原密码</label>
+    <div class="controls">
+      <input type="password" id="" placeholder="" name="oldPass">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="">新密码</label>
+    <div class="controls">
+      <input type="password" id="" placeholder="" name="newPass">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-primary">保存</button>
+    </div>
+  </div>
+</form>
+<{include file='footer.html'}>

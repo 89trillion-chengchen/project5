@@ -1,0 +1,28 @@
+<script>
+    $("form").submit(function() {
+        var pass = true;
+//some validations
+        if(pass == false){
+            return false;
+        }
+        $("table").mLoading();
+        return true;
+    });
+</script>
+
+
+<script>
+
+    $(document).ready(function() {
+        var pass = true;
+        //some validations
+        if(pass == false){
+            return false;
+        }
+        $(".ui-layout-center",parent.document).mLoading('hide');
+        return true;
+
+    });
+</script>
+</body>
+</html>

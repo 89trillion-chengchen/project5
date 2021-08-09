@@ -1,0 +1,71 @@
+<{include file='header.html'}>
+<style>
+td {max-width: 220px; word-break: break-all;}
+</style>
+<form class="form-search" action="" method="get">
+    <div class="op-container">
+        <label class="control-label" for="">日期</label>
+        <div class="input-append date" id="datepickerStart" data-date="" data-date-format="yyyy-mm-dd">
+            <input class="input-small" type="text" name="date" value="" placeholder="">
+            <span class="add-on"><i class="icon-th"></i></span>
+        </div>
+    </div>
+    
+    <div class="op-container">
+        <label class="control-label" for="">下拉框</label>
+        <select name="name1" class="input-small">
+          <option value="0" selected="selected" class="input-small option">All</option>
+          <option value="1" class="input-small option">Item1</option>
+        </select>
+    </div>
+    
+    <div class="op-container">
+        <label class="control-label" for="">输入框</label>
+        <div class="input-append">
+            <input name="name2" type="text" value="" class="input-medium">
+        </div>
+    </div>
+    
+    <div class="op-container">
+        <button class="btn" type="submit" name="display" value="query">按钮</button>
+    </div>
+</form>
+
+<label>总数：1</label>
+
+<table class="table table-striped table-hover table-condensed table-bordered">
+   <thead>
+     <tr>
+       <th>col1</th>
+       <th>col2</th>
+       <th>col3</th>
+       <th>col4</th>
+       <th>col5</th>
+       <th>col6</th>
+     </tr>
+   </thead>
+    <tbody>
+        <tr>
+          <td>val1</td>
+          <td>val1</td>
+          <td>val1</td>
+          <td>val1</td>
+          <td>val1</td>
+          <td>val1</td>
+        </tr>
+       </tbody>
+</table>
+<{$pagination nofilter}>
+<script type="text/javascript">
+$(document).ready(function(){
+});
+
+$('#datepickerStart').datetimepicker({
+   language:  'zh-CN',
+   minView: 2,
+   autoclose: true,
+   todayHighlight: true,
+});
+
+</script>
+<{include file='footer.html'}>

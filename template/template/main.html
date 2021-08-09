@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title><{$smarty.const.SITE_NAME}></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.layout.js"></script>
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 36px;
+        padding-bottom: 5px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+  </head>
+<body>
+<script src="/js/jquery.mloading.js"></script>
+<link href="/js/jquery.mloading.css" rel="stylesheet" media="screen">
+<div class="ui-layout-center">
+ <iframe id="main" width="100%" max-width="150%" scrolling="yes" height="100%" 
+ frameborder="0" name="main" src="<{$iframeUrl}>"></iframe>
+</div>
+<div class="ui-layout-north">
+ <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/"><{$smarty.const.SITE_NAME}></a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">欢迎，<{$smarty.session.user_name}>  &nbsp; | &nbsp;
+            <a href="/user/logout" class="navbar-link">退出</a>
+            <ul class="nav">
+              <!-- <li class="active"><a href="/">首页</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+</div>
+<!-- 
+<div class="ui-layout-south">South</div>
+<div class="ui-layout-east">East</div>
+ -->
+<div class="ui-layout-west" id="mainFrame">
+        <div class="span2" style="width:163px">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header"></li>
+              <li class="active"><a href="/">首页</a></li>
+                <{section name="i" loop=$permission}>
+                <{if $permission[i]['act'] eq ''}>
+                <li class="nav-header"><{$permission[i]['name']}></li>
+                <{else}>
+                <{if $permission[i]['isShow'] eq '1'}>
+                <li><a href="<{$permission[i]['act']}>" target="main"><{$permission[i]['name']}></a></li>
+                <{/if}>
+                <{/if}>
+                <{/section}>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	var myLayout = $('body').layout();
+	myLayout.allowOverflow("center");
+
+    $(".sidebar-nav li").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    $("#mainFrame").hover(function(){
+    	$(this).css("overflow-y","scroll");
+    },function(){
+    	$(this).css("overflow-y","hidden");
+    });
+});
+</script>
+<script>
+
+    $("li").click(function(e) {
+        if(e.ctrlKey || e.metaKey)
+        {
+            return true;
+        }
+        var pass = true;
+        //some validations
+        if(pass == false){
+            return false;
+        }
+        $(".ui-layout-center").mLoading();
+        return true;
+    });
+</script>
+</body>
+</html>

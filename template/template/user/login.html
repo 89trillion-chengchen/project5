@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    html,body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+      body {
+        background-color: #f5f5f5;
+		background: url("<{$imageUrl}>") no-repeat scroll center top transparent;
+        background-size: cover;
+      }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    input {
+        width: 206px;
+    }
+    </style>
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script>top.location.href != self.location.href ? top.location.href = self.location.href : 1</script>
+  </head>
+
+  <body title="<{$copyright}>">
+
+    <div class="container">
+
+      <form id ="myform" class="form-signin" action="/user/login" method="post" title="">
+        <{if $message}>
+        <div class="alert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <{$message}>
+        </div>
+        <{/if}>
+        <h2 class="form-signin-heading"></h2>
+        <input type="text" class="input-block-level" name="username">
+        <input type="password" class="input-block-level" name="password">
+        <input type="text" name="captcha" maxlength="6" size="6">
+        <button class="btn btn-large btn-primary" type="submit">Login</button>
+      </form>
+    </div> <!-- /container -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+
+<script type="text/javascript">
+
+	$("body").dblclick( function (evt) {
+
+		evt = evt || window.event;
+		var obj = evt.target || evt.srcElement;
+		if ( obj.nodeName != "BODY" && obj.nodeName != "DIV" ) {
+			return false;
+		}
+
+		if ( $("#myform").css("display") == "none" ) {
+			$("#myform").css("display", "block");
+		}
+		else {
+			$("#myform").css("display", "none");
+		}
+	});
+
+</script>
+
+</html>

@@ -1,0 +1,221 @@
+2021-08-06 16:11:37	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(84): service\SampleService->query('SELECT *  FROM ...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(58): service\ManagerService->getlog()
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->getlog()
+#6 /data/app/www/code/project5/webroot/index.php(53): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.getlog	ARGV: 0=act%3DManager.getlog
+2021-08-06 16:13:15	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(84): service\SampleService->query('SELECT *  FROM ...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(58): service\ManagerService->getlog()
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->getlog()
+#6 /data/app/www/code/project5/webroot/index.php(53): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.getlog	ARGV: 0=act%3DManager.getlog
+2021-08-06 16:16:30	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(84): service\SampleService->query('SELECT *  FROM ...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(58): service\ManagerService->getlog()
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->getlog()
+#6 /data/app/www/code/project5/webroot/index.php(53): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.getlog	ARGV: 0=act%3DManager.getlog
+2021-08-06 16:16:57	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/webroot/index.php(60): service\SampleService->query('SELECT *  FROM ...')
+#4 {main}
+2021-08-06 16:16:59	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/webroot/index.php(60): service\SampleService->query('SELECT *  FROM ...')
+#4 {main}	GET: act=user.login	ARGV: 0=act%3Duser.login
+2021-08-06 16:17:01	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/webroot/index.php(60): service\SampleService->query('SELECT *  FROM ...')
+#4 {main}	GET: act=Manager.getPvpDate	ARGV: 0=act%3DManager.getPvpDate
+2021-08-06 16:17:08	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(84): service\SampleService->query('SELECT *  FROM ...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(58): service\ManagerService->getlog()
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->getlog()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.getlog	ARGV: 0=act%3DManager.getlog
+2021-08-06 16:17:10	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'job5.Champion_package_log.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('SELECT *  FROM ...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('SELECT *  FROM ...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(84): service\SampleService->query('SELECT *  FROM ...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(58): service\ManagerService->getlog()
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->getlog()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.getlog	ARGV: 0=act%3DManager.getlog
+2021-08-06 17:50:59	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'package_name']','['price']','['diamond']','['soldier']','['soldier_num']','['coi' at line 2' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('INSERT INTO `Ch...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('INSERT INTO `Ch...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(105): service\SampleService->query('INSERT INTO `Ch...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss1&param%5B0%5D%5Bprice%5D=4.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 17:54:44	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'package_name']','['price']','['diamond']','['soldier']','['soldier_num']','['coi' at line 2' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('INSERT INTO `Ch...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('INSERT INTO `Ch...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(106): service\SampleService->query('INSERT INTO `Ch...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss1&param%5B0%5D%5Bprice%5D=4.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 18:18:07	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name']','Array['price']','Array['diamond']','Array['soldier']','Array['soldier_n' at line 2' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('INSERT INTO `Ch...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('INSERT INTO `Ch...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(108): service\SampleService->query('INSERT INTO `Ch...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss_1&param%5B0%5D%5Bprice%5D=3.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 18:18:36	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name']','Array['price']','Array['diamond']','Array['soldier']','Array['soldier_n' at line 2' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('INSERT INTO `Ch...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('INSERT INTO `Ch...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(108): service\SampleService->query('INSERT INTO `Ch...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss_1&param%5B0%5D%5Bprice%5D=3.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 18:47:41	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'price='rice',diamond='500',soldier='投矛手',soldier_num='5',coin='5000' where' at line 1' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('update `user` s...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('update `user` s...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(124): service\SampleService->query('update `user` s...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss_1&param%5B0%5D%5Bprice%5D=3.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 18:48:35	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'price='rice',diamond='500',soldier='投矛手',soldier_num='5',coin='5000' where' at line 1' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('update `Champio...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('update `Champio...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(124): service\SampleService->query('update `Champio...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss_1&param%5B0%5D%5Bprice%5D=3.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 18:49:10	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price' at row 1' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('update `Champio...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('update `Champio...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(124): service\SampleService->query('update `Champio...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss_1&param%5B0%5D%5Bprice%5D=3.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 18:50:41	172.18.0.1	exception 'PDOException' with message 'SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price' at row 1' in /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php:494
+Stack trace:
+#0 /data/app/www/code/project5/lib/raftphp/framework/data/pdo/PDOHelper.php(494): PDOStatement->execute(NULL)
+#1 /data/app/www/code/project5/classes/dao/SampleDao.php(39): framework\data\pdo\PDOHelper->query('update `Champio...', NULL, NULL)
+#2 /data/app/www/code/project5/classes/service/SampleService.php(30): dao\SampleDao->query('update `Champio...', NULL, NULL)
+#3 /data/app/www/code/project5/classes/service/ManagerService.php(124): service\SampleService->query('update `Champio...')
+#4 /data/app/www/code/project5/classes/ctrl/ManagerCtrl.php(50): service\ManagerService->upPvpDate(Array)
+#5 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(56): ctrl\ManagerCtrl->upPvpDate()
+#6 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#7 {main}	GET: act=Manager.upPvpDate	POST: param%5B0%5D%5Bid%5D=1&param%5B0%5D%5Bname%5D=boss_1&param%5B0%5D%5Bprice%5D=3.99&param%5B0%5D%5Bdiamond%5D=500&param%5B0%5D%5Bsoldier%5D=%E6%8A%95%E7%9F%9B%E6%89%8B&param%5B0%5D%5Bsoldier_num%5D=5&param%5B0%5D%5Bcoin%5D=5000&param%5B1%5D%5Bid%5D=2&param%5B1%5D%5Bname%5D=boss2&param%5B1%5D%5Bprice%5D=9.99&param%5B1%5D%5Bdiamond%5D=1000&param%5B1%5D%5Bsoldier%5D=%E5%B7%A8%E7%9F%B3%E5%85%B5&param%5B1%5D%5Bsoldier_num%5D=12&param%5B1%5D%5Bcoin%5D=12000&param%5B2%5D%5Bid%5D=3&param%5B2%5D%5Bname%5D=boss3&param%5B2%5D%5Bprice%5D=19.99&param%5B2%5D%5Bdiamond%5D=2500&param%5B2%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B2%5D%5Bsoldier_num%5D=30&param%5B2%5D%5Bcoin%5D=30000&param%5B3%5D%5Bid%5D=4&param%5B3%5D%5Bname%5D=boss4&param%5B3%5D%5Bprice%5D=49.99&param%5B3%5D%5Bdiamond%5D=6500&param%5B3%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B3%5D%5Bsoldier_num%5D=40&param%5B3%5D%5Bcoin%5D=80000&param%5B4%5D%5Bid%5D=5&param%5B4%5D%5Bname%5D=boss5&param%5B4%5D%5Bprice%5D=99.99&param%5B4%5D%5Bdiamond%5D=14000&param%5B4%5D%5Bsoldier%5D=%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83&param%5B4%5D%5Bsoldier_num%5D=60&param%5B4%5D%5Bcoin%5D=200000	ARGV: 0=act%3DManager.upPvpDate
+2021-08-06 20:04:00	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:03	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:04	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:04	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:04	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:04	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:04	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:04	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:04:15	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
+2021-08-06 20:30:18	172.18.0.1	exception 'SmartyException' with message 'Unable to load template file 'pvp.html'' in /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php:125
+Stack trace:
+#0 /data/app/www/code/project5/lib/smarty/sysplugins/smarty_internal_templatebase.php(384): Smarty_Internal_TemplateBase->fetch('pvp.html', NULL, NULL, NULL, true)
+#1 /data/app/www/code/project5/lib/raftphp/framework/mvc/view/smarty/SmartyView.php(39): Smarty_Internal_TemplateBase->display('pvp.html')
+#2 /data/app/www/code/project5/lib/raftphp/framework/mvc/dispatcher/RequestDispatcherBase.php(58): framework\mvc\view\smarty\SmartyView->display()
+#3 /data/app/www/code/project5/webroot/index.php(55): framework\mvc\dispatcher\RequestDispatcherBase->dispatch()
+#4 {main}
