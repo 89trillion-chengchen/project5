@@ -5,7 +5,40 @@
 （1）首先group by group_id得到分组信息  
 （2）再根据查到的group_id查询具体的操作信息，并放入数组  
 （3）返回给前端操作记录
-# 2.接口设计
+
+# 2.存储设计
+
+（1）PVP冠军礼包及世界boss礼包结构
+
+| 内容     | 数据库 | key         | 类型    |
+| -------- | ------ | ----------- | ------- |
+| 主键     | mysql  | id          | int     |
+| 钻石数   | mysql  | diamond     | int     |
+| 礼包名   | mysql  | name        | varchar |
+| 价格     | mysql  | price       | double  |
+| 钻石数   | mysql  | diamond     | int     |
+| 士兵类型 | mysql  | soldier     | varchar |
+| 士兵数量 | mysql  | soldier_num | int     |
+| 金币数量 | mysql  | coin        | int     |
+
+（2）操作记录表
+
+| 内容       | 数据库     | key          | 类型     |
+| ---------- | ---------- | ------------ | -------- |
+| 主键       | mysql      | id           | int      |
+| 时间戳     | mysql      | group_id     | int      |
+| 礼包名     | mysql      | Sku          | varchar  |
+| 价格       | mysql      | price        | double   |
+| 钻石数     | mysql     | diamond      | int      |
+| 士兵类型   | mysql      | soldier      | varchar  |
+| 士兵数量   | mysql      | soldier_num  | int      |
+| 金币数量   | mysql      | coin         | int      |
+| 记录更改列 | mysql      | type         | varchar  |
+| 礼包种类   | mysql      | package_type | varchar  |
+| 操作人姓名 | mysql      | name         | varchar  |
+| 操作时间   | mysql      | updateTime   | datetime |
+
+# 3.接口设计
 
 ### （1）获取世界BOSS冠军礼包信息
 ####请求方法  
@@ -353,7 +386,7 @@ http://89tr.chengchen.com/index/getlog
 }
 ```
 
-# 3.目录结构
+# 4.目录结构
 
 ```php 
 .
@@ -393,7 +426,7 @@ http://89tr.chengchen.com/index/getlog
 
 
 ```
-## 3.1 逻辑分层
+## 4.1 逻辑分层
   ```php
 
     classes/ctrl是请求控制层
@@ -404,14 +437,14 @@ http://89tr.chengchen.com/index/getlog
 
     webroot/index.php是入口
   ```
-## 4.运行和测试
-### 4.1 如何部署运行服务
+## 5.运行和测试
+### 5.1 如何部署运行服务
   ```php
 使用docker运行容器，容器包含 nginx、php、php-fpm
 
 配置文件根目录为项目根目录webroot，运行端口为8000
   ```
-### 4.2 如何测试接口
+### 5.2 如何测试接口
   ```php
   终端进入 report 目录
   运行 locust 

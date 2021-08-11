@@ -35,7 +35,6 @@ class SampleDao extends ConstDaoBase
 
     public function query($query, $params = null, $args = null)
     {
-
         return $this->dbHelper->query($query,$params,$args);
     }
 }

@@ -2,9 +2,19 @@
 
 namespace service;
 
-use framework\util\Singleton;
+require "../../lib/raftphp/framework/util/Singleton.php";
+require "../../lib/raftphp/framework/data/pdo/PDOConfiguration.php";
+require "../../lib/raftphp/framework/data/pdo/PDOManager.php";
+require "../../lib/raftphp/framework/data/pdo/PDOHelper.php";
+require "../dao/DaoBase.php";
+require "../dao/ConstDaoBase.php";
+require "../dao/SampleDao.php";
+require "../service/BaseService.php";
+require "../service/SampleService.php";
+require "../service/ManagerService.php";
+
 use PHPUnit\Framework\TestCase;
-use view\JsonView;
+use framework\util\Singleton;
 
 class ManagerServiceTest extends TestCase
 {
@@ -129,7 +139,7 @@ class ManagerServiceTest extends TestCase
         /** @var ManagerService $managerService */
         $managerService = Singleton::get(ManagerService::class);
         $result = $managerService->getBossDate();
-        echo new JsonView($result);
+        print_r($result);
 
     }
 
@@ -146,6 +156,6 @@ class ManagerServiceTest extends TestCase
         /** @var ManagerService $managerService */
         $managerService = Singleton::get(ManagerService::class);
         $result = $managerService->getlog();
-        echo new JsonView($result);
+        echo $result;
     }
 }
