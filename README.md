@@ -43,7 +43,7 @@
 ### （1）获取世界BOSS冠军礼包信息
 ####请求方法  
 ```php 
-HTTP POST
+HTTP GET
 ```
 #### 接口地址   
 ```php 
@@ -112,6 +112,57 @@ HTTP POST
 ```php 
 http://89tr.chengchen.com/index/upBossDate
 ```
+#### 请求参数
+```php 
+{"param":[
+        {
+            "id": "1",
+            "name": "boss1",
+            "price": "3.90",
+            "diamond": "500",
+            "soldier": "投矛手",
+            "soldier_num": "5",
+            "coin": "5000"
+        },
+        {
+            "id": "2",
+            "name": "boss_2",
+            "price": "9.90",
+            "diamond": "1000",
+            "soldier": "巨石兵",
+            "soldier_num": "12",
+            "coin": "12000"
+        },
+        {
+            "id": "3",
+            "name": "boss_3",
+            "price": "19.90",
+            "diamond": "2500",
+            "soldier": "巫毒娃娃",
+            "soldier_num": "30",
+            "coin": "30000"
+        },
+        {
+            "id": "4",
+            "name": "boss_4",
+            "price": "499.99",
+            "diamond": "6500",
+            "soldier": "巫毒娃娃",
+            "soldier_num": "90",
+            "coin": "80000"
+        },
+        {
+            "id": "5",
+            "name": "boss_5",
+            "price": "99.99",
+            "diamond": "14000",
+            "soldier": "巫毒娃娃",
+            "soldier_num": "600",
+            "coin": "200000"
+        }
+    ]
+}
+```
 #### 响应
 ```php 
 {
@@ -123,7 +174,7 @@ http://89tr.chengchen.com/index/upBossDate
 ### （3）获取PVP冠军礼包信息
 ####请求方法
 ```php 
-HTTP POST
+HTTP GET
 ```
 #### 接口地址
 ```php 
@@ -201,6 +252,57 @@ HTTP POST
 ```php 
 http://89tr.chengchen.com/index/upPVPDate
 ```
+#### 请求参数
+```php 
+{"param":[
+        {
+            "id": "1",
+            "name": "boss1",
+            "price": "3.90",
+            "diamond": "500",
+            "soldier": "投矛手",
+            "soldier_num": "5",
+            "coin": "5000"
+        },
+        {
+            "id": "2",
+            "name": "boss_2",
+            "price": "9.90",
+            "diamond": "1000",
+            "soldier": "巨石兵",
+            "soldier_num": "12",
+            "coin": "12000"
+        },
+        {
+            "id": "3",
+            "name": "boss_3",
+            "price": "19.90",
+            "diamond": "2500",
+            "soldier": "巫毒娃娃",
+            "soldier_num": "30",
+            "coin": "30000"
+        },
+        {
+            "id": "4",
+            "name": "boss_4",
+            "price": "499.99",
+            "diamond": "6500",
+            "soldier": "巫毒娃娃",
+            "soldier_num": "90",
+            "coin": "80000"
+        },
+        {
+            "id": "5",
+            "name": "boss_5",
+            "price": "99.99",
+            "diamond": "14000",
+            "soldier": "巫毒娃娃",
+            "soldier_num": "600",
+            "coin": "200000"
+        }
+    ]
+}
+```
 #### 响应
 ```php 
 {
@@ -212,7 +314,7 @@ http://89tr.chengchen.com/index/upPVPDate
 ### （5）获取操作记录信息
 ####请求方法
 ```php 
-HTTP POST
+HTTP GET
 ```
 #### 接口地址
 ```php 
